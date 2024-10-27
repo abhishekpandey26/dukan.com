@@ -65,7 +65,7 @@ function Cart() {
 
       {/* Summary Section */}
       <div className="w-full lg:w-1/4 bg-white rounded-lg shadow-md p-4">
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">Summary</h1>
+        <h1 className="text-2xl font-bold text-green-600 mb-4">Summary</h1>
         <div className="flex flex-col">
           <h2 className="font-semibold text-gray-600 mb-2">
             Items in Cart: {cart.length}
@@ -78,6 +78,21 @@ function Cart() {
               ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}
             </span>
           </div>
+          <button
+            className="
+  px-4 py-2
+  sm:px-5 sm:py-3 
+  lg:px-6 lg:py-3
+  mt-5 sm:mt-7
+  bg-green-500 
+  border text-white 
+  font-bold rounded-full 
+  hover:bg-white hover:text-green-500 hover:border-green-500
+  transition duration-300 ease-in-out
+"
+          >
+            Checkout Now
+          </button>
         </div>
       </div>
     </div>
